@@ -4,9 +4,31 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
-	.box{width: 200px;height: 200px;background-color: red;box-shadow: 10px 10px 5px 5px green;border-radius: 50%;}
-	.ball{width: 100px;height: 100px;background-color: yellow;border-radius: 50px;transition: background-color 2s ease }
-	.box:hover .ball{background-color: blue;}
+	.box{width: 200px;
+  height: 200px;
+  background-color: red;
+  box-shadow: 10px 10px 5px 5px green;
+  border-radius: 50%;
+  position:relative;
+}
+	.ball{width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50px;
+    transition: all 6s;
+    position:absolute;
+    bottom:50px;
+    right:-50px;
+    border-right:2px solid #000;
+    border-lift:2px solid green;
+}
+.box:hover .ball{
+  background-color: blue; 
+  bottom:80px;
+  right:80px;
+ border-radius: 5px;
+  box-shadow: 10px 10px 5px 5px pink;
+}
 	</style>
 </head>
 <body>
