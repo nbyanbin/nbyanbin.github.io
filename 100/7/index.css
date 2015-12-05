@@ -1,0 +1,17 @@
+.clearfix:before,
+		.clearfix:after {
+		    content: " ";
+		    display: table;
+		}
+
+		.clearfix:after {
+		    clear: both;
+		}
+
+
+.parent{background-color: #000;}
+.right{height: 50px;
+	width: 50%;
+	background-color: red;
+	margin-top: 30px;
+}

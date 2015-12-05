@@ -1,0 +1,64 @@
+*{margin: 0;padding: 0;}
+
+.header{width: 1184px;
+	height: 64px;
+	margin: 0 auto;
+}
+.sav{list-style: none;float: right; 
+    display:block;
+    text-align: center;
+    height: 64px;
+    color: #727272;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.banner{background-color: #00bcd5;
+height: 187px;
+color: #fff;
+font-size: 38px;
+text-align: center;
+padding-top:83px;
+}
+.center{padding-top: 62px;
+	background-color: #ededed;
+}
+.center-inner{width: 672px;
+margin:0 auto;
+}
+#bg-left{float: left;
+}
+.number{width: 48px;
+	height: 96px;
+	background-color: #00bcd5;
+	margin-bottom: 16px;
+	box-shadow: 0 4px 10px 0 #555;
+}
+.number h3{line-height:100px;
+	text-align: center;
+	color: #fff;
+}
+#hero{float: left;
+}
+.bg-right{background-color: #fff;
+	width: 616px;;height: 96px;
+	margin-bottom: 16px;
+	padding-left: 8px;
+	box-shadow: 0 4px 10px 0 #555;
+}
+.excel{list-style: none;}
+.excel a{text-decoration: none;color: #7d717f;
+}
+.excel a b{line-height: 48px;
+}
+.footer{background-color: #212121;
+	height:186px;
+	clear: both;
+}
+.footerinner{color: rgba(255,255,255,0.54);
+	font-size: 22px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	line-height: 200px;
+}
