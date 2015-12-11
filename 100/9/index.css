@@ -1,0 +1,9 @@
+*{margin: 0;padding: 0;}
+.dark-primary-color    { background: #FBC02D;height: 20px; }
+.default-primary-color { background: #FFEB3B;height: 150px;}
+.light-primary-color   { background: #FFF9C4; width: 200px;height: 350px;margin: 0 auto;}
+.text-primary-color    { color: #212121; width: 300px;height: 300px;}
+.accent-color          { background: #FFEB3B;height: 250px;}
+.primary-text-color    { color: #212121; width: 350px;height: 200px;}
+.secondary-text-color  { color: #727272; width: 150px;height: 180px;}
+.divider-color         { border-color: #B6B6B6; width: 400px;height: 100px;}
