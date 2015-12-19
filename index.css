@@ -1,3 +1,7 @@
+.peter {
+	color: red;
+}
+
 * {margin: 0;padding: 0;}
 	.wrap{width: 930px;margin: 0 auto;}
 	.header{height: 102px;}
