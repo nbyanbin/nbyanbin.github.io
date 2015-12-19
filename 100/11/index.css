@@ -1,0 +1,10 @@
+.box{width: 100px;
+	height: 100px;
+	background-color: red;
+	transition: all 1s .1s;
+
+}
+.box.move{
+	transform: translateX(100%);
+
+}
