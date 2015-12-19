@@ -2,8 +2,25 @@
 	position: fixed;
 	left: 0;
 	top: 0;
-	/*bottom: 0;
-*/	width: 200px;
-	height: 100px;
+	bottom: 0;
+	width: 200px;
+	/*height: 100px;*/
 	background-color: green;
+	transform: translateX(-200px);
+	transition: all 1s .1s;
+
+}
+.box.show {
+	transform: translateX(0);
+
+}
+.move {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: red;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
 }
