@@ -14,13 +14,18 @@
 	transform: translateX(0);
 
 }
-.move {
+.icon-reorder {
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
-	background-color: red;
+	/*background-color: red;*/
 	position: fixed;
 	left: 0;
 	top: 0;
 	bottom: 0;
+}
+a {text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
 }
