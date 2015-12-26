@@ -1,30 +1,185 @@
-.peter {
-	color: red;
+body {
+   font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+   margin: 0;	
 }
 
-* {margin: 0;padding: 0;}
-	.wrap{width: 930px;margin: 0 auto;}
-	.header{height: 102px;}
-	.header .logo{height: 102px;float: left;}
-	.logo{width: 109px;}
-	.nav a{text-decoration: none;color: #0055b3;}
-	.navs{list-style-type: none;float: left;background-image: url(http://a1.qpic.cn/psb?/V111dAye3UR91h/ZR8utIgN6S83yXNLN6hpdOHIqV3nFF4tkoDB.0lc5Ms!/m/dHQBAAAAAAAAnull&bo=BwAHAAcABwACCi4!&rf=photolist&t=5);background-repeat: no-repeat;background-position: right center;margin-top: 48px;}
-	.navs a{display:block;text-decoration: none;font-size: 10px;font-family: Arial;color:#424345;text-align:left;padding:0px 28px;font-weight: 6px;}
-	.seach{width: 319px;float: right;padding-top: 16px;}}
-	.banner{height: 380px;clear: both;}
-	.dell{height: 308px;margin-top: 23px;}
-	.dell-center{padding-left: 12px;padding-right: 12px;}
-	.dell div{width: 302px;height: 285px;float: left;}
-	.dell h2{height: 31px;line-height: 18px;font-size: 12px; margin-left: 21px;}
-	.dell ul{list-style-image:url(http://a3.qpic.cn/psb?/V111dAye3UR91h/Q5a*5SLSdN583AEV6cFvW6dISD7BGf33r.VhfXV1lYE!/m/dHIBAAAAAAAAnull&bo=BAAHAAQABwACCi4!&rf=photolist&t=5);list-style-position: inside;margin: 13px 0px 0px 40px;}
-	.dell a{text-decoration: none;color: #000;font-size: 10px;}
-	.lang{height: 47px;clear: both;}
-	.english{width: 216px;}
-	.tubiao{width: 65px;}
-	.fuwu{height: 179px;}
-	.jieshao{width: 207px;float: left;margin: 8px 1px}
-	.jieshao{width: 186px;float: left;margin: 8px 1px}
-	.jieshao{width: 186px;float: left;margin: 8px 1px}
-	.jieshao{width: 186px;float: left;margin: 8px 1px}
-	.jieshao{width: 165px;float: left;margin: 8px 1px}
-	.jieshao li{padding-left:16px;list-style: none;font-size: 10px;font-family: Arial;line-height: 22px;background-image: url(http://a2.qpic.cn/psb?/V111dAye3UR91h/WmOoKvMMdZQdQCvBX.xIIFrIjblKR6.70Gp.XkOR598!/m/dHUBAAAAAAAAnull&bo=BAAHAAQABwACCi4!&rf=photolist&t=5);background-repeat: no-repeat;background-position: left center;}
+a {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* section */
+.box {
+	position:absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 200px;
+	/*height: 100px;*/
+	background-color:  rgba(215,220,255, 0.7);
+	transform: translateX(-200px);
+	transition: all 1s .1s;
+	z-index: 100;
+
+}
+.box.show {
+	transform: translateX(0);
+
+}
+.ui-mask {
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  position: fixed;
+  display: none;
+}
+
+.ui-mask.show {
+	display: block;
+	transform: translateX(0);qe
+}
+
+
+.icon-reorder {
+	/*height: 50px;
+	width: 50px;
+	border-radius: 50%;*/
+	/*background-color: red;*/
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	font-size:40px;
+
+
+
+}
+.icon-reorder:hover{
+	background-color: rgba(255,255,255, .3);
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 60px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	font-size:40px;
+}
+
+a {text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+.hero {
+	background-color: rgb(0, 188, 212);
+}
+
+.hero h1 {
+	line-height: 160px;
+	font-weight: normal;
+	color: #fff;
+	text-align: center;
+}
+
+
+.toc {
+	
+	margin: 20px auto;
+	padding: 0 15px;
+	max-width: 850px;
+}
+
+.toc li {
+	
+	margin-bottom: 20px;
+}
+
+li a {
+	display: block;
+	
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: all 1s ease;
+    color: #212121;
+}
+
+li a:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 20px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+
+
+
+
+
+.toc a .id {
+	height: 96px;
+	background-color: rgb(0, 188, 212);
+	color: white;
+	line-height: 96px;
+	text-align: center;
+}
+.toc a .detail {
+	height: 96px;
+	overflow: hidden;
+	padding-left: 10px;
+}
+
+@media (min-width:600px){
+	.toc a .id{
+		width: 15%;
+		float: left;
+	}
+	.toc a .detail{
+		width: 85%;
+		float: right;
+	}
+}
+
+.toc a .detail .title {
+	font-size: 1.3rem;
+	line-height: 2.3;
+}
+
+.toc a .detail .date {
+	opacity: .8;
+}
+
+footer {
+	margin-top: 80px;
+	height: 100px;
+	background-color: #212121;
+}
+ .footer-inner {
+ 	
+ }
