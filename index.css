@@ -38,13 +38,16 @@ ul {
 	width: 200px;
 	/*height: 100px;*/
 	background-color:  rgba(215,220,255, 0.7);
-	transform: translateX(-200px);
+	-webkit-transform: translateX(-200px);
+	        transform: translateX(-200px);
+	-webkit-transition:all 1s .1s;
 	transition: all 1s .1s;
 	z-index: 100;
 
 }
 .box.show {
-	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	        transform: translateX(0);
 
 }
 .ui-mask {
@@ -60,7 +63,8 @@ ul {
 
 .ui-mask.show {
 	display: block;
-	transform: translateX(0);qe
+	-webkit-transform: translateX(0);
+	        transform: translateX(0);
 }
 
 
@@ -181,5 +185,5 @@ footer {
 	background-color: #212121;
 }
  .footer-inner {
- 	
+
  }
