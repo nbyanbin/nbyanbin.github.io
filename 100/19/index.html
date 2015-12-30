@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>许娇</title>
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<link rel="stylesheet" href="100/css/font-awesome.min.css">
+	<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
+<style>
+	
+	*{margin: 0;padding: 0;}
+	.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+/*导航1*/
+.header{background-color: #fff;
+		height:50px;
+		display: none;
+		}
+@media(min-width: 600px){
+		.header{display: block;}
+	}
+.header ul li{
+		float: right;
+  		list-style: none;
+  		font-size: 20px;
+  		line-height: 50px;
+  		padding-right: 30px;
+	}
+.header ul li a{
+	text-decoration: none ;
+	color: #6b6b6b;}
+.box {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 200px;
+	background-color:#B2EBF2;
+	z-index: 100;
+	-webkit-transform: translateX(-200px);
+	        transform: translateX(-200px);
+	-webkit-transition: all 1s .1s;
+	transition: all 1s .1s;
+	}
+.box.show {
+			-webkit-transform: translateX(0);
+			        transform: translateX(0);
+		  }
+.box ul {
+	padding-top: 30px;
+}
+
+.box ul li a {
+  display: block;
+  padding: .4em;
+  text-align: center;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  text-decoration: none;
+  color: gray;
+}
+
+.box ul li a:hover {
+  background-color: #6eefff;
+}
+
+/*导航2*/
+.bg{
+	text-decoration: none;
+	position: fixed;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	top: 10px;
+	left: 10px;
+}
+.btn:hover{
+		border-radius: 50%;
+		background-color: rgba(255,255,255, .3);
+		
+}
+.icon-reorder{
+			  color: #6b6b6b;
+			  font-size: 26px;
+			 }
+@media(min-width: 600px){
+	.btn{display: none;}
+	}
+.ui-mask
+		{
+			background-color:rgba(0, 0, 0, 0.5); 
+			height: 100%;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			z-index: 3;
+			position: fixed;
+			display: none;
+		}
+.ui-mask.show{display: block;}
+.banner{background-color: #00bcd5;
+		height:40vh;
+		color: #fff;
+		font-size: 38px;
+		text-align: center;
+		line-height: 30vh;}
+.center{
+		background-color: #ededed;}
+.center li{list-style: none;
+		   padding-top: 16px;}
+.center-inner a{text-decoration: none;
+				 display: block;
+				 line-height: 90px;
+				 text-align: center;
+				 max-width: 900px;
+				 margin: 0 auto;}
+.main-inner{margin:6px 10px;
+			box-shadow: 0px 4px 4px #cccccc;
+			clear: both;}
+.number{color: #fff;
+		font-size: 20px;
+		background-color: #00bcd5;
+		height: 90px;}
+.hero{height: 90px;
+	  color: #7d717f;}
+@media (min-width: 600px){
+	.number{width: 16%;
+			float: left;}
+	.hero{width: 84%;
+		  float: right;}
+}
+.footer{background-color: #212121;
+		height:30vh;
+		clear: both;}
+.footer h3{
+	color:#9c9c9c;
+	text-align: center;
+	line-height: 30vh;
+}
+</style>
+</head>
+<body>
+<!-- 导航1 -->
+	<div class="clearfix header">
+		<ul>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Blogs</a></li>
+			<li><a href="#">Home</a></li>
+		</ul>
+	</div>
+
+<!-- 导航 2-->
+	<a href="#" class="bg"><div class="btn"><i class="icon-reorder"></i></div></a>
+	<div class="box">
+		<ul>
+     	<li><a href="index.html">HOME</a></li>
+      	<li><a href="100">100</a></li>
+      	<li><a href="100/1.html">About</a></li>
+    </ul>
+	</div>
+	<!-- ui-mask -->
+	<div class="ui-mask"></div>
+
+	<div class="banner"><h2>百日百练</h2></div>
+	<div class="center">
+		<div class="center-inner">
+
+			<ul>
+				<li><a href="100/1.html"><div class=" clearfix main-inner"><div class="number"><h2>1</h2></div><div class="hero"><h3>Red Box</h3></div></div></a></li>
+
+				<li><a href="100/2/index.html"><div class="clearfix main-inner"><div class="number"><h2>2</h2></div><div class="hero"><h3>css 圆角阴影效果</h3></div></div></a></li>
+
+				<li><a href="100/3/index.html"><div class="clearfix main-inner"><div class="number"><h2>3</h2></div><div class="hero"><h3>index</h3></div></div></a></li>
+
+				<li><a href="100/4/index.html"><div class="clearfix main-inner"><div class="number"><h2>4</h2></div><div class="hero"><h3>js点击变色效果</h3></div></div></a></li>
+
+				<li><a href="100/5/index.html"><div class="clearfix main-inner"><div class="number"><h2>5</h2></div><div class="hero"><h3>颜色自适应</h3></div></div></a></li>
+
+				<li><a href="100/6/index.html"><div class="clearfix main-inner"><div class="number"><h2>6</h2></div><div class="hero"><h3>响应式布局</h3></div></div></a></li>
+
+				<li><a href="100/7/index.html"><div class="clearfix main-inner"><div class="number"><h2>7</h2></div><div class="hero"><h3>汉堡包响应式</h3></div></div></a></li>
+
+				<li><a href="100/8/index.html"><div class="clearfix main-inner"><div class="number"><h2>8</h2></div><div class="hero"><h3>js Hello World</h3></div></div></a></li>
+
+				<li><a href="100/9/index.html"><div class="clearfix main-inner"><div class="number"><h2>9</h2></div><div class="hero"><h3>Css3 平移效果</h3></div></div></a></li>
+
+				<li><a href="100/10/index.html"><div class="clearfix main-inner"><div class="number"><h2>10</h2></div><div class="hero"><h3>汉堡包菜单效果</h3></div></div></a></li>
+
+				<li><a href="100/11/index.html"><div class="clearfix main-inner"><div class="number"><h2>11</h2></div><div class="hero"><h3>导入字体符号</h3></div></div></a></li>
+
+				<li><a href="100/12/index.html"><div class="clearfix main-inner"><div class="number"><h2>12</h2></div><div class="hero"><h3>字体自适应</h3></div></div></a></li>
+
+			</ul>
+
+		</div>
+	</div>
+	<div class="footer">
+		<h3>The beautiful attracts the beautiful</h3>
+	</div>
+	<!-- 以下是js -->
+		<script>
+			$('.btn').click(function(){
+				$('.box').addClass('show');
+				$('.ui-mask').addClass('show');
+			});
+			$('.ui-mask').click(function(){
+				$('.box').removeClass('show');
+				$(this).removeClass('show');
+			});
+		</script>
+</body>
+</html>
